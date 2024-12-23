@@ -1,0 +1,133 @@
+/* *:not(body) {
+    outline: 1px red dotted;
+} */
+
+:root {
+    font-family: Arial, Helvetica, sans-serif;
+    /*sizes*/
+    font-size: 1rem;
+    --page-width: 80rem;
+    --top-offset: 6rem;
+    width: 100%;
+    /*colors*/
+    background-color: oklch(98% 0% 68deg);
+    --button-color: oklch(37% 19% 345deg);
+    --button-shadow-color: oklch(26% 0.07 263deg);
+    --link-color: oklch(0% 0% 0deg);
+    --link-visited-color: oklch(42% 48% 328deg);
+    --link-hover-color: oklch(45% 78% 264deg);
+    --link-hover-backgroundcolor: oklch(78% 43% 68deg/0.2);
+    --nav-background-color: oklch(100% 0% 90deg / 80%);
+    --main-background-color: oklch(54% 14% 253deg);
+    --main-text-color: oklch(100% 0% 90deg);
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+a:visited {
+    color: var(--link-visited-color);
+}
+
+a:hover {
+    color: var(--link-hover-color);
+    text-decoration: underline;
+    background-color: var(--link-hover-backgroundcolor);
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    margin-block-start: 10rem;
+}
+
+header,
+main,
+footer,
+footer ul {
+    max-width: var(--page-width);
+    margin-inline: auto;
+}
+
+nav {
+    font-size: 1.3em;
+    padding-block: 1.2em;
+    /*negative top margin*/
+    margin-top: calc(var(--top-offset) * -1);
+    background-color: var(--nav-background-color);
+    width: 95%;
+    margin-inline: auto;
+    display: flex;
+    justify-content: center;
+    /*safety measure to always render on top*/
+    z-index: 22;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 4.3em;
+}
+
+.hero-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    /* Negative margin to fill up to the top */
+    margin-top: -8.7rem;
+    /* opacity: 0.2; */
+}
+
+main section {
+    background-color: var(--main-background-color);
+    font-size: 1.2rem;
+    color: var(--main-text-color);
+    min-height: 70vh;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+
+}
+
+section button {
+    padding: 0.5em 1.2em;
+    background-color: var(--button-color);
+    font-size: 1.4em;
+    color: inherit;
+    border: none;
+    border-radius: 0.5em;
+    box-shadow: 0.1em 0.1em 0.5em var(--button-shadow-color);
+}
+
+section h1 {
+    margin-block-start: 1em;
+    font-weight: normal;
+}
+
+footer {
+    height: 5em;
+    font-size: 1.6em;
+}
+
+footer ul {
+    height: 100%;
+    display: flex;
+    /*default but making it clear*/
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 4em;
+}
