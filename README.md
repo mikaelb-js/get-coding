@@ -1,5 +1,5 @@
 # get-coding
-## A simple CSS design for the [Get Coding Mockup]([https://github.com/Lexicon-frontend-2024-2025/hobby-html--vning/blob/main/README.md](https://www.figma.com/design/Kox5hlXEK8TDgnhpRXOYeM/mockup?node-id=0-1&node-type=canvas&t=gbOCVJDvvtuOVdRM-0))
+## A simple CSS design for the [Get Coding Mockup]([url](https://www.figma.com/design/Kox5hlXEK8TDgnhpRXOYeM/mockup?node-id=0-1&node-type=canvas&t=gbOCVJDvvtuOVdRM-0))
 
 ### Dependencies
 Web Browser. Optionally a web server.
