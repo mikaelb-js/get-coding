@@ -1,6 +1,6 @@
 # get-coding
 ## A simple CSS design for the Get Coding Mockup
-See Get Coding Mockup [link]([url](https://www.figma.com/design/Kox5hlXEK8TDgnhpRXOYeM/mockup?node-id=0-1&node-type=canvas&t=gbOCVJDvvtuOVdRM-0))
+
 ### Dependencies
 Web Browser. Optionally a web server.
 
